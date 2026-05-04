@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eos × AI Strategy — Chrystelle Juste</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/slides.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  free shipping on orders $45+ &nbsp;·&nbsp; <strong>eos × AI Strategy</strong> — A Working Prototype by Chrystelle Juste
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo">
+    <div class="eos-circle">eos</div>
+  </div>
+  <div class="nav-links">
+    <span>Body</span><span>Shave</span><span>Lip</span><span>Sale</span><span>Fragrance</span><span>About</span>
+  </div>
+  <div class="nav-right">
+    <div class="nav-dots" id="navDots"></div>
+    <span class="slide-count" id="slideCount">01 / 07</span>
+  </div>
+</nav>
+
+<!-- DECK -->
+<div class="deck" id="deck">
+
+  <!-- SLIDE 1: COVER -->
+  <div class="slide active" id="s1">
+    <div class="lime-bar"></div>
+    <div class="slide-inner center">
+      <p class="eyebrow">A GenAI Strategy for eos Products</p>
+      <h1 class="cover-h">AI that starts with people.<br><em>Scales with purpose.</em></h1>
+      <p class="cover-sub">Three pillars to make eos the most community-intelligent, safely-built, and people-empowered beauty brand in the market.</p>
+      <div class="pill-row">
+        <span class="pill pill-c">👥 Customers</span>
+        <span class="pill pill-t">⚙️ AI-Tech</span>
+        <span class="pill pill-p">🌱 People</span>
+      </div>
+      <p class="cover-by">Presented by <strong>Chrystelle Juste</strong> &nbsp;·&nbsp; AI Change Enablement Strategist &nbsp;·&nbsp; New York, NY</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: PLATFORM DATA -->
+  <div class="slide" id="s2">
+    <div class="slide-inner">
+      <p class="eyebrow pink">The Opportunity</p>
+      <h2 class="slide-h">What eos is leaving on the table — right now</h2>
+      <p class="slide-sub">Real platform data. Four channels. One missing intelligence layer connecting them all.</p>
+      <div class="platform-grid" id="platformGrid"></div>
+      <div class="insight-bar">
+        <span class="insight-icon">💡</span>
+        <p><strong>The fix:</strong> A unified Social Pulse layer — pulling signals from all four platforms into one strategic brief for the Social Media Manager, Marketing, and Product teams every morning.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: SOCIAL PULSE ENGINE -->
+  <div class="slide" id="s3">
+    <div class="slide-inner">
+      <p class="eyebrow pink">Pillar 01 — Customers</p>
+      <h2 class="slide-h">Social Pulse Engine</h2>
+      <p class="slide-sub">One AI system. Three beneficiaries. Powered by Make + Perplexity + Claude — scanning twice daily.</p>
+      <div class="flow-diagram" id="flowDiagram"></div>
+      <div class="recipients-grid" id="recipientsGrid"></div>
+      <!-- LIVE DEMO EMBEDDED -->
+      <div class="demo-section" id="demoSection">
+        <div class="demo-label">▶ Live Demo — Try it now</div>
+        <div class="demo-inner">
+          <div class="demo-left">
+            <p class="demo-sublabel">Community signals input</p>
+            <div class="example-pills">
+              <span class="exp" onclick="loadExample('tiktok')">TikTok comments</span>
+              <span class="exp" onclick="loadExample('male')">Male market signals</span>
+              <span class="exp" onclick="loadExample('mixed')">Mixed feedback</span>
+            </div>
+            <textarea id="demoInput" placeholder="Paste TikTok comments, reviews, or DMs here — or click an example above..."></textarea>
+            <input type="password" id="apiKey" class="api-input" placeholder="sk-ant-... (Anthropic API key to activate live AI)">
+            <p class="api-note">Your key stays local — sent directly to Anthropic's API. Never stored.</p>
+            <button class="run-btn" id="runBtn" onclick="runDemo()">
+              <span id="runBtnText">Run Social Pulse Analysis</span>
+            </button>
+          </div>
+          <div class="demo-right">
+            <p class="demo-sublabel">AI-generated strategic brief</p>
+            <div class="demo-output empty" id="demoOutput">Your strategic brief will appear here — trending signals, product opportunities, marketing angles, friction points, and one recommended next step. Executive-ready in under 10 seconds.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: THE COMMUNITY TOLD US -->
+  <div class="slide navy" id="s4">
+    <div class="slide-inner">
+      <p class="eyebrow tan">Pillar 01 — Proof of Concept</p>
+      <h2 class="slide-h white">The community told us. <em class="tan-em">We listened.</em></h2>
+      <p class="slide-sub light">Social Pulse detected a rising signal. AI surfaced the brief. Two new scents validated before a single dollar of production spend.</p>
+      <div class="signal-proof" id="signalProof"></div>
+      <div class="scents-grid" id="scentsGrid"></div>
+      <div class="craft-row" id="craftRow"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: THE ENGINE BEHIND IT ALL -->
+  <div class="slide blue-bg" id="s5">
+    <div class="slide-inner">
+      <p class="eyebrow blue">Pillar 02 — AI-Tech</p>
+      <h2 class="slide-h dark-blue">The engine <em class="blue-em">behind it all</em></h2>
+      <p class="slide-sub blue-muted">Prompt Library · AI Playbook · AI Agents — built with governance and human guardrails at every layer.</p>
+      <div class="engine-grid" id="engineGrid"></div>
+      <div class="roi-row" id="roiRow"></div>
+      <div class="cmd-center" id="cmdCenter"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: PEOPLE -->
+  <div class="slide" id="s6">
+    <div class="slide-inner">
+      <p class="eyebrow pink">Pillar 03 — People</p>
+      <div class="quote-hero">
+        AI transformation is 20% tech and 80% people.<br>
+        <em>If your team isn't using AI every day, you don't have an AI strategy — you have an AI experiment.</em>
+      </div>
+      <div class="people-grid" id="peopleGrid"></div>
+      <div class="measure-strip" id="measureStrip"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: AI MENU + CLOSE -->
+  <div class="slide" id="s7">
+    <div class="slide-inner">
+      <p class="eyebrow blue">The AI Menu + About</p>
+      <h2 class="slide-h">The right tool for the right job.</h2>
+      <p class="slide-sub">Not one platform. A governed framework where each tool plays its position at eos.</p>
+      <div class="ai-menu-grid" id="aiMenuGrid"></div>
+      <div class="ms-note">
+        <strong>If eos runs on Microsoft 365:</strong> Copilot integrates directly into the existing stack and becomes the natural starting point for cross-functional adoption — zero new tool onboarding required.
+      </div>
+      <div class="about-bar" id="aboutBar"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ARROWS -->
+<button class="arrow arrow-prev" id="prevBtn" onclick="prevSlide()" disabled>← Back</button>
+<button class="arrow arrow-next" id="nextBtn" onclick="nextSlide()">Next →</button>
+
+<!-- SCRIPTS -->
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/aria.js"></script>
+
+</body>
+</html>
